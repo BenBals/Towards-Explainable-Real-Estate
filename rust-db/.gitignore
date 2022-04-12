@@ -1,0 +1,10 @@
+target/
+.vscode/
+*.log
+logs
+public
+.envrc
+perf.data
+perf.*
+flamegraph.svg
+callgrind.out*

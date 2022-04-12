@@ -1,0 +1,40 @@
+[package]
+name = "predictors"
+version = "0.1.0"
+authors = ["Niko <niko.hastrich@student.hpi.uni-potsdam.de>", "Ben <ben.bals@student.hpi.uni-potsdam.de>", "Sebastian <sebastian.angrick@student.hpi.uni-potsdam.de>", "Jonas <jonas.schmidt@student.hpi.uni-potsdam.de>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[features]
+default = []
+strict = []
+
+[dependencies]
+common = {path = "../common"}
+algorithms = {path = "../algorithms"}
+evaluators = {path = "../evaluators"}
+predictions = {path = "../predictions"}
+dissimilarities = {path = "../dissimilarities"}
+cost_functions = {path = "../cost_functions"}
+partition = {path = "../partition"}
+flexi_logger = "^0.17"
+log = "^0.4"
+typed-index-collections = "^1.1"
+rayon = "^1.5"
+itertools = "^0.10"
+rstar = "^0.8"
+derive_builder = "0.10.0"
+
+[dependencies.indicatif]
+version = "^0.15.0"
+features = ["rayon"]
+
+[dependencies.serde]
+version = "^1.0"
+features = ["derive"]
+
+[dev-dependencies]
+test_helpers = {path = "../test_helpers"}
+proptest = "^0.10.1"
+assert_approx_eq = "^1.1.0"

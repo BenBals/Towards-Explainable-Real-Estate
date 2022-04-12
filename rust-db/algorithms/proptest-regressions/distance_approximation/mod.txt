@@ -1,0 +1,14 @@
+# Seeds for failure cases proptest has generated in the past. It is
+# automatically read and these particular cases re-run before any
+# novel cases are generated.
+#
+# It is recommended to check this file in to source control so that
+# everyone who runs the test benefits from these saved cases.
+cc ce688601c400f60aa9065be6128002bc2c88c31db891441e9d7f5b5b09e26f13 # shrinks to a = -83678.64106233604, xm = 0.0, ym = 0.0, y = 0.0
+cc e44f8c09246817d2499886ab3acc8550489696a97aaebe61c11516ead57c7b73 # shrinks to a = -609351.4464246619, xm = 723907.7588686796, ym = 698894.4656522337, y = 0.0
+cc 07cbd53958fcad545eccacdccde61bf1f5a5caf1aa9eac5dc8c01025f9dc7ca4 # shrinks to a = -985061.9924512741, b = 761408.4426228071, c = 746090.4905709787, y = 831270.9609063261
+cc 6e678495b2a5aaaf1e2d74fc737cf34fdf6c47215fbc9be450ec2d0e6619c6e4 # shrinks to a = -355600.24229227554, b = 893764.2829908347, c = 546983.5376035045, y = -644885.5921052692
+cc 81e72bea693c13717d4293412fb12c92cc1ef52a1cf1c5b598c630d998b94443 # shrinks to a = 522337.0956636688, b = -24588.313256402616, c = 236320.19091333635
+cc c74277f375eb16efb23b7228725d732636297297d70e39352150364e5f01f4b3 # shrinks to a = -50524.37890035531, b = -724613.4948933714, c = 0.0
+cc 0faed5673fe60404d8ed4beda5aab054c5967149b263e3ce9fac1f660266057e # shrinks to a = -1215.1854738924885, b = -656012.2989000705, c = 0.0
+cc fb0dace48ee4c0812dfec5e8d587a2d2f9d0c3e32bf2ea3a24cb0ba77b96b112 # shrinks to a = 3.606746314215343, b = 5331.588705661612, c = 0.0

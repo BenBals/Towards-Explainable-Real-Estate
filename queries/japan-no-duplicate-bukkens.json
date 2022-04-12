@@ -1,0 +1,10 @@
+{
+  "plane_location.0": { "$gt": -1140843.77, "$lt": 1414596.17 },
+  "plane_location.1": { "$gt": -401614.57, "$lt": 2618746.47 },
+  "duplicate": { "$ne": true },
+  "objektunterart": { "$ne": "invalid" },
+  "kurzgutachten.objektangabenBaujahr": { "$gt": 1500, "$lt": 2025 },
+  "kurzgutachten.objektangabenWohnflaeche": { "$gt": 20, "$lt": 2000 },
+  "last_entry_with_bukken_id": true,
+  "marktwert": { "$lte": 300000000 }
+}

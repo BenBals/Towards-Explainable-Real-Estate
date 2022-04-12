@@ -1,0 +1,22 @@
+[package]
+name = "cost_functions"
+version = "0.1.0"
+authors = ["Niko <niko.hastrich@student.hpi.uni-potsdam.de>", "Ben <ben.bals@student.hpi.uni-potsdam.de>", "Sebastian <sebastian.angrick@student.hpi.uni-potsdam.de>", "Jonas <jonas.schmidt@student.hpi.uni-potsdam.de>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[features]
+default = []
+strict = []
+
+[dependencies]
+common = {path = "../common"}
+algorithms = {path = "../algorithms"}
+typed-index-collections = "^1.1"
+
+[dev-dependencies]
+assert_approx_eq = "^1.1.0"
+proptest = "^0.10.1"
+test_helpers = {path = "../test_helpers"}
+dissimilarities = {path = "../dissimilarities"}

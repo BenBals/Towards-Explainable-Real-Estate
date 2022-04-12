@@ -1,0 +1,22 @@
+[package]
+name = "test_helpers"
+version = "0.1.0"
+authors = ["Niko <niko.hastrich@student.hpi.uni-potsdam.de>", "Ben <ben.bals@student.hpi.uni-potsdam.de>", "Sebastian <sebastian.angrick@student.hpi.uni-potsdam.de>", "Jonas <jonas.schmidt@student.hpi.uni-potsdam.de>"]
+edition = "2018"
+
+[features]
+default = []
+strict = []
+
+[dependencies]
+common = {path = "../common"}
+proptest = "^0.10.1"
+
+[dependencies.chrono]
+version = "^0.4.19"
+features = ["serde"]
+
+[dependencies.mongodb]
+version = "^1.2"
+default-features = false
+features = ["sync", "bson-u2i"]

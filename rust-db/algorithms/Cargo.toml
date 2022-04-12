@@ -1,0 +1,62 @@
+[package]
+name = "algorithms"
+version = "0.1.0"
+authors = ["Niko <niko.hastrich@student.hpi.uni-potsdam.de>", "Ben <ben.bals@student.hpi.uni-potsdam.de>", "Sebastian <sebastian.angrick@student.hpi.uni-potsdam.de>", "Jonas <jonas.schmidt@student.hpi.uni-potsdam.de>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[features]
+default = []
+strict = []
+
+[dependencies]
+common = { path = "../common/" }
+typed-index-collections = "^1.1"
+derive_more = "^0.99"
+flexi_logger = "^0.17"
+log = "^0.4"
+itertools = "^0.10"
+rayon = "^1.5"
+num = "^0.4"
+
+[dependencies.mongodb]
+version = "^1.2"
+default-features = false
+features = ["sync", "bson-u2i"]
+
+[dependencies.indicatif]
+version = "^0.15.0"
+features = ["rayon"]
+
+[dev-dependencies]
+dissimilarities = {path = "../dissimilarities"}
+test_helpers = {path = "../test_helpers"}
+rstar = "^0.8"
+kd-tree = "^0.3"
+criterion = "^0.3"
+rand = "^0.8.2"
+rand_xorshift = "^0.3.0"
+proptest = "^0.10.1"
+assert_approx_eq = "^1.1.0"
+num = "^0.4"
+
+[[bench]]
+name = "interval_tree_bench"
+path = "benches/interval_tree.rs"
+harness = false
+
+[[bench]]
+name = "sweepline_bench"
+path = "benches/sweepline.rs"
+harness = false
+
+[[bench]]
+name = "pointlike_container_bench"
+path = "benches/pointlike_container.rs"
+harness = false
+
+[[bench]]
+name = "knn_comparison"
+path = "benches/knn_comparison.rs"
+harness = false

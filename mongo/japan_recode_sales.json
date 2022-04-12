@@ -1,0 +1,44 @@
+db.raw_monthly.aggregate([
+    { "$match": {
+        "money_combo": {$gte: 2600000},
+        "house_area": {$gte: 1.0},
+    }},
+    { "$addFields": {
+        "lat": "$nl",
+        "lon": "$el",
+        "wertermittlungsstichtag": { "$dateFromString": {
+          "dateString": "$end_date",
+          "format": "%Y-%m-%d"
+        } },
+        "marktwert": {
+            $cond: {
+                if: { $eq: ["$money_combo", ""] },
+                then: null,
+                else: { $toDouble: "$money_combo" }
+            }
+        },
+        "kurzgutachten.objektangabenWohnflaeche": {
+            $cond: {
+                if: { $eq: ["$house_area", ""] },
+                then: null,
+                else: "$house_area"
+            }
+        },
+        "grundstuecksgroesseInQuadratmetern": {
+            $cond: {
+                if: { $eq: ["$land_area_all", ""] },
+                then: null,
+                else: "$land_area_all"
+            }
+        },
+        "kurzgutachten.objektangabenBaujahr": {
+            $cond: {
+                if: { $eq: ["$kenchiku_date", ""] },
+                then: null,
+                else: { $toInt: { $divide: [ "$kenchiku_date", 100 ] } }
+            }
+        },
+        "kurzgutachten.objektangabenAnzahlZimmer": "$madori_number_all"
+    }},
+    { $out: "japan_sales_reshaped" }
+])

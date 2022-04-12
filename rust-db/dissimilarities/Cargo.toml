@@ -1,0 +1,38 @@
+[package]
+name = "dissimilarities"
+version = "0.1.0"
+authors = ["Niko <niko.hastrich@student.hpi.uni-potsdam.de>", "Ben <ben.bals@student.hpi.uni-potsdam.de>", "Sebastian <sebastian.angrick@student.hpi.uni-potsdam.de>", "Jonas <jonas.schmidt@student.hpi.uni-potsdam.de>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[features]
+default = []
+strict = []
+
+[dependencies]
+common = {path = "../common"}
+algorithms = {path = "../algorithms"}
+genevo = "0.5.0"
+serde_dhall = "0.10.0"
+log = "^0.4"
+derive_builder = "0.10.0"
+
+[dependencies.serde]
+version = "^1.0"
+features = ["derive"]
+
+[dev-dependencies]
+test_helpers = {path = "../test_helpers"}
+proptest = "^0.10.1"
+assert_approx_eq = "^1.1.0"
+
+[dev-dependencies.mongodb]
+version = "^1.2"
+default-features = false
+features = ["sync", "bson-u2i"]
+
+[dev-dependencies.chrono]
+version = "^0.4.19"
+features = ["serde"]
+

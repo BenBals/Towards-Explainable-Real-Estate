@@ -1,0 +1,7 @@
+# Seeds for failure cases proptest has generated in the past. It is
+# automatically read and these particular cases re-run before any
+# novel cases are generated.
+#
+# It is recommended to check this file in to source control so that
+# everyone who runs the test benefits from these saved cases.
+cc 373a719ff7db7ba1ba70d51b423d740bca0ef49e7fbe88992acf002a7ce49eee # shrinks to mut to_normalize = Immo { id: ObjectId(60531af700633a7e00911ef4), marktwert: Some(0.1), wohnflaeche: Some(0.1), plane_location: Some((3000000.0, 5000000.0)), wertermittlungsstichtag: Some(2007-01-01), u: Some(0.1), baujahr: Some(1900), grundstuecksgroesse: Some(0.0), zustand: Some(SehrGut), ausstattung: Some(1), plz: Some("᱀𑶠꧰𞥐𑥐"), kreis: Some("𐣴Aਅ"), anzahl_garagen: Some(0), plr_berlin: Some("000000000") }, mut training_immo = Immo { id: ObjectId(60531af700633a7e00911ef5), marktwert: Some(811678764.6602999), wohnflaeche: Some(0.1), plane_location: Some((3000000.0, 5000000.0)), wertermittlungsstichtag: Some(2007-01-01), u: Some(0.1), baujahr: Some(1900), grundstuecksgroesse: Some(0.0), zustand: Some(SehrGut), ausstattung: Some(1), plz: Some("᠐𑑐૦꧰𖩠"), kreis: Some("𒀀\u{fe00}_"), anzahl_garagen: Some(0), plr_berlin: Some("000000000") }

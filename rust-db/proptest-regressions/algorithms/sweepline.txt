@@ -1,0 +1,9 @@
+# Seeds for failure cases proptest has generated in the past. It is
+# automatically read and these particular cases re-run before any
+# novel cases are generated.
+#
+# It is recommended to check this file in to source control so that
+# everyone who runs the test benefits from these saved cases.
+cc 544f5afaa3072073800ce80b87238ae669f735a7f3cd6cbd434a9f72d97cb4e9 # shrinks to immo1 = Immo { id: ObjectId(601d3b07004f79a0006e91c6), marktwert: Some(0.1), wohnflaeche: Some(0.1), plane_location: Some((0.0, 0.0)), u_germany: None, u_berlin: None }, immo2 = Immo { id: ObjectId(601d3b0700100c6a006e91c7), marktwert: Some(0.1), wohnflaeche: Some(0.1), plane_location: Some((0.0, 972793618767.0197)), u_germany: None, u_berlin: None }
+cc e6f70b3b5477684f3d051376043ad14b7c1450a42fc91cd5a64391bc4537063c # shrinks to immo1 = Immo { id: ObjectId(601d3c0b001d60ab00598d51), marktwert: Some(0.1), wohnflaeche: Some(0.1), plane_location: Some((466252667632.2811, 513510313839.95636)), u_germany: None, u_berlin: None }, immo2 = Immo { id: ObjectId(601d3c0b0063e85500598d52), marktwert: Some(0.1), wohnflaeche: Some(0.1), plane_location: Some((130849911574.97128, 871999363125.1279)), u_germany: None, u_berlin: None }
+cc 371b1f2e5862a0d633d790d1de5f096d00dd2e53612bff6c069838fd1ea4a4a2 # shrinks to immo1 = Immo { id: ObjectId(601d3c700019391d006855da), marktwert: Some(0.1), wohnflaeche: Some(0.1), plane_location: Some((909947284539.0326, 103513083982.9983)), u_germany: None, u_berlin: None }, immo2 = Immo { id: ObjectId(601d3c7000a8c209006855db), marktwert: Some(0.1), wohnflaeche: Some(0.1), plane_location: Some((196920523559.748, 931695819282.1183)), u_germany: None, u_berlin: None }

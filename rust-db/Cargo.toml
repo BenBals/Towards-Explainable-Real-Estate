@@ -1,0 +1,39 @@
+[workspace]
+members = [
+    "common",
+    "test_helpers",
+    "algorithms",
+    "normalizers",
+    "cost_functions",
+    "dissimilarities",
+    "partition",
+    "predictions",
+    "predictors",
+    "evaluators",
+    "evo",
+    "executables",
+]
+default-members = [
+    "common",
+    "test_helpers",
+    "algorithms",
+    "normalizers",
+    "cost_functions",
+    "dissimilarities",
+    "partition",
+    "predictions",
+    "predictors",
+    "evaluators",
+]
+
+[profile.release]
+debug = true
+lto = "thin"
+
+[profile.bench]
+debug = true
+lto = "thin"
+
+[profile.test]
+opt-level = 0
+

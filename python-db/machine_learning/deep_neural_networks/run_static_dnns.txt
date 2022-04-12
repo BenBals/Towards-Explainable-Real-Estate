@@ -1,0 +1,4 @@
+taskset --cpu-list 0-40 python3 main.py -c japan_sales_reshaped --japan -sp 2017-03-01
+taskset --cpu-list 0-40 python3 main.py -c japan_sales_reshaped --japan -sp 2017-03-01 --predefined tabnet
+taskset --cpu-list 0-40 python3 main.py -c japan_sales_reshaped --japan -sp 2017-03-01 --predefined kaggle-house-prices
+taskset --cpu-list 0-40 python3 main.py -c japan_sales_reshaped --japan -sp 2017-03-01 --predefined kaggle-baseline

@@ -1,0 +1,48 @@
+[package]
+name = "common"
+version = "0.1.0"
+authors = ["Niko <niko.hastrich@student.hpi.uni-potsdam.de>", "Ben <ben.bals@student.hpi.uni-potsdam.de>", "Sebastian <sebastian.angrick@student.hpi.uni-potsdam.de>", "Jonas <jonas.schmidt@student.hpi.uni-potsdam.de>"]
+edition = "2018"
+
+[features]
+default = []
+strict = []
+
+[dependencies]
+derive_more = "^0.99"
+serde_json = "^1.0"
+serde_dhall = "0.10.0"
+flexi_logger = "^0.17"
+log = "^0.4"
+assert_approx_eq = "^1.1.0"
+rayon = "^1.5"
+csv = "^1.1"
+linregress = "^0.4.0"
+rstar = "^0.8"
+derive_builder = "0.10.0"
+sha2 = "0.10.0"
+hex-literal = "0.3.4"
+
+[dependencies.chrono]
+version = "^0.4.19"
+features = ["serde"]
+
+[dependencies.mongodb]
+version = "^1.2"
+default-features = false
+features = ["sync", "bson-u2i"]
+
+[dependencies.serde]
+version = "^1.0"
+features = ["derive"]
+
+[dependencies.reqwest] 
+version = "^0.11.0"
+features = ["blocking", "json"]
+
+[dependencies.log-panics]
+version = "2.0.0"
+features = ["with-backtrace"]
+
+[dev-dependencies]
+proptest = "^0.10.1"

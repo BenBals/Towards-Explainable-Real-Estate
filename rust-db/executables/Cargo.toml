@@ -1,0 +1,81 @@
+[package]
+name = "executables"
+version = "0.1.0"
+authors = ["Niko <niko.hastrich@student.hpi.uni-potsdam.de>", "Ben <ben.bals@student.hpi.uni-potsdam.de>", "Sebastian <sebastian.angrick@student.hpi.uni-potsdam.de>", "Jonas <jonas.schmidt@student.hpi.uni-potsdam.de>"]
+edition = "2018"
+
+[dependencies]
+common = {path = "../common"}
+algorithms = {path = "../algorithms"}
+partition = {path = "../partition"}
+dissimilarities = {path = "../dissimilarities"}
+cost_functions = {path = "../cost_functions"}
+predictions = {path = "../predictions"}
+predictors = {path = "../predictors"}
+evaluators = {path = "../evaluators"}
+normalizers = {path = "../normalizers"}
+evo = {path = "../evo"}
+structopt = "^0.3"
+flexi_logger = "^0.17"
+log = "^0.4"
+serde_json = "^1.0"
+serde_dhall = "0.10.0"
+rayon = "^1.5"
+csv = "^1.1"
+itertools = "^0.10"
+genevo = "0.5.0"
+rand = "0.8.3"
+
+[dependencies.indicatif]
+version = "^0.15.0"
+features = ["rayon"]
+
+[dependencies.mongodb]
+version = "^1.2"
+default-features = false
+features = ["sync", "bson-u2i"]
+
+[dependencies.serde]
+version = "^1.0"
+features = ["derive"]
+
+[dependencies.chrono]
+version = "^0.4.19"
+features = ["serde"]
+
+[dependencies.reqwest] 
+version = "^0.11.0"
+features = ["blocking", "json"]
+
+
+[[bin]]
+name = "calculate_U"
+path = "src/calculate_U_main.rs"
+
+[[bin]]
+name = "dully"
+path = "src/dully_main.rs"
+
+[[bin]]
+name = "offers_import"
+path = "src/offers_import_main.rs"
+
+[[bin]]
+name = "contraction"
+path = "src/contraction_main.rs"
+
+[[bin]]
+name = "single_block_prediction"
+path = "src/single_block_prediction_main.rs"
+
+[[bin]]
+name = "clean"
+path = "src/clean_main.rs"
+
+[[bin]]
+name = "dcel"
+path = "src/dcel_main.rs"
+
+[[bin]]
+name = "evo"
+path = "src/evo_main.rs"

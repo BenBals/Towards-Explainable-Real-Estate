@@ -1,0 +1,31 @@
+[package]
+name = "evaluators"
+version = "0.1.0"
+authors = ["Niko <niko.hastrich@student.hpi.uni-potsdam.de>", "Ben <ben.bals@student.hpi.uni-potsdam.de>", "Sebastian <sebastian.angrick@student.hpi.uni-potsdam.de>", "Jonas <jonas.schmidt@student.hpi.uni-potsdam.de>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[features]
+default = []
+strict = []
+
+[dependencies]
+common = {path = "../common"}
+predictions = {path = "../predictions"}
+log = "^0.4"
+derive_more = "^0.99"
+genevo = "0.5.0"
+
+[dependencies.serde]
+version = "^1.0"
+features = ["derive"]
+
+[dependencies.mongodb]
+version = "^1.2"
+default-features = false
+features = ["sync", "bson-u2i"]
+
+[dev-dependencies]
+proptest = "^0.10.1"
+test_helpers = {path = "../test_helpers"}

@@ -1,0 +1,8 @@
+# Seeds for failure cases proptest has generated in the past. It is
+# automatically read and these particular cases re-run before any
+# novel cases are generated.
+#
+# It is recommended to check this file in to source control so that
+# everyone who runs the test benefits from these saved cases.
+cc 985ad14e00ae8d1e85857f17743c2c2bb6ffc993c7ee690c22b280479043411c # shrinks to a = Vector3([0.00001, 52909.61824219951, 89642.52198071642]), b = Vector3([0.00001, 0.00001, 0.00001]), c = Vector3([0.00001, 0.00001, 54875.0831340633]), d = Vector3([96323.40703029063, 0.00001, 0.00001])
+cc e7a88d436afc96bd0f1dba8496fa27dd631de9025f5c82f304fc8e15d48f36ff # shrinks to a = Vector3([949.8391562423436, 449.68662141294095, 868.7211804174719]), b = Vector3([0.001, 0.001, 836.8741706619012]), c = Vector3([138.6427916281856, 960.7009401165824, 0.001]), d = Vector3([666.6357236146499, 0.001, 0.001])

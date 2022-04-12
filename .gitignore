@@ -1,0 +1,55 @@
+# Ignore all pychaches and build artifacts
+**/__pycache__/
+_build/
+*.sqsh
+
+# Ignore IDE files
+**/.idea/
+**/.vscode/
+.ipynb_checkpoints/
+.~lock*
+*.pyc
+*.swp
+db_scripts.iml
+
+# Ignore private files
+local.nix
+**/venv
+
+# Ignore all generated data, keep only the shapefiles
+**/export/**
+data/*
+!data/local-variations
+*.zip
+*.png
+*.json
+!mongo/*.json
+!queries/*.json
+!data/germany_shapefiles
+!data/kreise_einwohner
+!data/test_clustering_no_metadata.json
+!data/test_clustering.json
+!data/lor_*_partition_berlin.json
+!data/normalization/normalization_example.json
+!data/normalization/price_index_quarters.csv
+!data/normalization/kreistyp.csv
+!data/normalization/japan_normalizer.csv
+!data/normalization/brazil_quarters.csv
+!data/japan_shapefiles
+!config/evo/dully-seed.json
+!config/evo/ba-p2-seed.json
+
+# ignore empirica data
+**/dsvhpilouisemolitor*
+
+# ignore libcuda linking files
+_libcuda
+
+# Ignore (Rust) logs
+logs
+.Rproj.user
+
+# ignore R logs
+r-scripts/.Rhistory
+r-scripts/.RData
+**/*.RData

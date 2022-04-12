@@ -1,0 +1,7 @@
+# Seeds for failure cases proptest has generated in the past. It is
+# automatically read and these particular cases re-run before any
+# novel cases are generated.
+#
+# It is recommended to check this file in to source control so that
+# everyone who runs the test benefits from these saved cases.
+cc d022197cdab28cd1b96dd6189b5cdc1aff4213dd3d131270d04b54f85677f441 # shrinks to mut real = [Immo { id: ObjectId(60350023009c1a1e009dd544), marktwert: Some(0.1), wohnflaeche: Some(0.1), plane_location: Some((0.0, 0.0)), u: Some(0.1) }]

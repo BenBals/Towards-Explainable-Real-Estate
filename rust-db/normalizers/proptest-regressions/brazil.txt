@@ -1,0 +1,7 @@
+# Seeds for failure cases proptest has generated in the past. It is
+# automatically read and these particular cases re-run before any
+# novel cases are generated.
+#
+# It is recommended to check this file in to source control so that
+# everyone who runs the test benefits from these saved cases.
+cc 263da62609bae2f144b14a5d8a97a0a5d44f6a063e62802b82f36aac4dd8b1a0 # shrinks to mut immos = [Immo { id: ObjectId(60fe68fc00630e5500550bbd), idx: Some(ImmoIdx(0)), marktwert: Some(0.1), wohnflaeche: Some(0.1), plane_location: Some((3000000.0, 5000000.0)), wertermittlungsstichtag: Some(2007-01-01), u: Some(0.1), baujahr: Some(1900), grundstuecksgroesse: Some(0.0), zustand: Some(SehrGut), ausstattung: Some(1), plz: Some("𑜰꧰𑃰꧰౦"), kreis: Some("𐡠a\u{11366}"), anzahl_garagen: Some(0), anzahl_stellplaetze: Some(0), plr_berlin: Some("000000000"), vermietbarkeit: Some(false), verwertbarkeit: Some(false), erbbaurecht: Some(false), drittverwendungsfaehigkeit: Some(false), unterkellerungsgrad: Some(0.0), keller: Some(false), objektunterart: Some(Eigentumswohnung), anzahl_zimmer: Some(0.5), verwendung: Some(Eigennutzung), ags0: Some("੦０০꣐𞋰๐᱐𑛀"), regiotyp: Some(0), centrality: Some(0), micro_location_scores: Some(MicroLocationScore { all: 0.0, education_and_work: 0.0, leisure: 0.0, public_transport: 0.0, shopping: 0.0 }), macro_location_scores: Some(MacroLocationScore { social_status: 0.0, economic_status: 0.0, market_dynamics: 0.0 }), restnutzungsdauer: Some(0.0), gesamtnutzungsdauer: None }], year = 2000, month = 1, day = 1

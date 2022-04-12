@@ -1,0 +1,7 @@
+# Seeds for failure cases proptest has generated in the past. It is
+# automatically read and these particular cases re-run before any
+# novel cases are generated.
+#
+# It is recommended to check this file in to source control so that
+# everyone who runs the test benefits from these saved cases.
+cc b7cf8140bf6ebd866470aded03f8bb5a38c79e3032aeed9eb1d6a53f5d5ebaf9 # shrinks to immos = [Immo { id: ObjectId(60548ad1009821b3005806a0), marktwert: Some(0.1), wohnflaeche: Some(0.1), plane_location: Some((3000000.0, 5000000.0)), wertermittlungsstichtag: Some(2007-01-01), u: Some(0.1), baujahr: Some(1900), grundstuecksgroesse: Some(0.0), zustand: Some(SehrGut), ausstattung: Some(1), plz: Some("𖭐𑇐𑄶𑁦𞋰"), kreis: Some("0a𐒰"), anzahl_garagen: Some(0), plr_berlin: Some("000000000") }]
