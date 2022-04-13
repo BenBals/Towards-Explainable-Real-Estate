@@ -2,7 +2,7 @@
 
 See https://arxiv.org/abs/2110.05116 for the paper this code belongs to.
 
-We know this is scientific that the is, at best, doubiously documented. We are happy to help, contact us at [ben.bals@student.hpi.de](mailto:ben.bals@student.hpi.de).
+We know this is scientific code and, at best, doubiously documented. We are happy to help, contact us at [ben.bals@student.hpi.de](mailto:ben.bals@student.hpi.de).
 
 ## What is this?
 This repo contains scientific code to evaluate the algorithms presentend in the paper experimentally.
